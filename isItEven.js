@@ -17,3 +17,13 @@ function testEven(n) {
       return false
     }
 }
+
+function testEven(n) {
+    return  n % 2 == 0
+}
+
+function testEven(n) {
+    return  n % 2 == 0 ? true : false
+}
+
+[1, 2, 3, 4, 5].filter(n => n % 2 == 0)
