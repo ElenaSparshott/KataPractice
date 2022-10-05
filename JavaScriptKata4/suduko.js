@@ -18,6 +18,26 @@ function valid9(arr){
   }
   return true
 }
+// createSquare(board, 3, 6)
+
+function createSquare(board, row, col){
+  
+  let array = []
+  
+  array.push(board[row][col])
+  array.push(board[row][col + 1])
+  array.push(board[row][col + 2])
+  
+  array.push(board[row + 1][col])
+  array.push(board[row + 1][col + 1])
+  array.push(board[row + 1][col + 2])
+  
+  array.push(board[row + 2][col])
+  array.push(board[row + 2][col + 1])
+  array.push(board[row + 2][col + 2])
+  
+  return array
+}
 
 function validSolution(board){
   for(let i = 0; i < board.length; i++){
@@ -38,5 +58,17 @@ function validSolution(board){
       return false
     }
   }
+  
+  
+  for(let row = 0; row < 9; row += 3){
+    for(let col = 0; col < 9; col += 3){
+      let theSquare = createSquare(board, row, col)
+      let answer = valid9(theSquare)
+      if(answer === false){
+        return false
+      }
+    }
+  }
+  
   return true
 }
