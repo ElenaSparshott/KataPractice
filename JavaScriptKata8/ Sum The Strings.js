@@ -11,9 +11,11 @@
 
 
 function sumStr(a,b) {
-  let numA = parseInt(a)
-  let numB = parseInt(b)
+ 
+  numA = Number(a)
+  numB = Number(b)
   let answer = numA + numB
   let answerString = answer.toString()
   return answerString
 }
+
