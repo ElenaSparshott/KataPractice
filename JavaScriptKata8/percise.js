@@ -10,3 +10,8 @@ function find(array, element) {
   }
   return "Not found";
 }
+
+function find(a, e) {
+  let n = a.indexOf(e)
+  return n >=0 ? n : "Not found";
+}
