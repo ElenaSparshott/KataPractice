@@ -10,13 +10,26 @@
 
 // };
 
-function noBoringZeros(n) {
-    let newstring = n.toString()
-  let newNumber = newstring.replace(/0+$/,"" )
+// function noBoringZeros(n) {
+//     let newstring = n.toString()
+//   let newNumber = newstring.replace(/0+$/,"" )
   
-  let answer = Number(newNumber)
-  console.log((answer))
-  return answer
+//   let answer = Number(newNumber)
+//   console.log((answer))
+//   return answer
+// }
+
+// noBoringZeros(145000)
+
+function isVowel(n) {
+    return "aeiou".includes(n)    
 }
 
-noBoringZeros(145000)
+let isConsonant = l => !isVowel(l)
+
+function shortcut (s) {
+  
+    return s.split('').filter(isConsonant).join('')
+}
+
+console.log(shortcut("hello"))
