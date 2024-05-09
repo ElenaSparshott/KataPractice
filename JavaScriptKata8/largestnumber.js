@@ -21,15 +21,33 @@
 
 // noBoringZeros(145000)
 
-function isVowel(n) {
-    return "aeiou".includes(n)    
-}
+// function isVowel(n) {
+//     return "aeiou".includes(n)    
+// }
 
-let isConsonant = l => !isVowel(l)
+// let isConsonant = l => !isVowel(l)
 
-function shortcut (s) {
+// function shortcut (s) {
   
-    return s.split('').filter(isConsonant).join('')
+//     return s.split('').filter(isConsonant).join('')
+// }
+
+// console.log(shortcut("hello"))
+
+
+function gooseFilter (birds) {
+  let geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
+  
+    return birds.filter(isGeese)
+};
+
+function isGeese(a) {
+  return !["African", "Toulouse", "Pilgrim", 'Roman Tufted', 'Steinbacher'].includes(a)
 }
 
-console.log(shortcut("hello"))
+function capitalizeWord(word) {
+  
+    return  word[0].toUpperCase() + word.slice(1).toLowerCase()
+  
+
+}
