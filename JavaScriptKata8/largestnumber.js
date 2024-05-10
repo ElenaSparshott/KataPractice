@@ -51,3 +51,23 @@ function capitalizeWord(word) {
   
 
 }
+
+
+function xor(a, b) {
+  
+  if(a == true && b == false) {
+    return true
+  } else if (a == false && b == true) {
+      return true
+  } else if (a == false && b == false) {
+      return false
+  } else if (a == true && b == true) {
+      return false
+  }
+}
+
+
+function helloWorld() {
+  let hello =  "Hello World"
+  return hello
+}
