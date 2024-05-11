@@ -71,3 +71,44 @@ function helloWorld() {
   let hello =  "Hello World"
   return hello
 }
+
+function add(a,b){
+    return a + b
+}
+
+function divide(a,b){
+    return a/b
+}
+
+function multiply(a,b){
+    return a*b
+}
+
+function mod(a,b){
+    return a%b
+}
+   
+function exponent(a,b){
+    return a**b
+}
+    
+function subt(a,b){
+    return a-b
+}
+
+
+function nthEven(n){
+  return 2*n - 2
+}
+
+
+function warnTheSheep(queue) {
+  if(queue[queue.length-1] == "wolf") {
+    console.log("Pls go away and stop eating my sheep")
+    return "Pls go away and stop eating my sheep"
+  } else {
+    let sheep = queue.indexOf("wolf") 
+      
+    return value =  `Oi! Sheep number ${queue.length - sheep -1}! You are about to be eaten by a wolf!`
+  }
+}
