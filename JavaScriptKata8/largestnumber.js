@@ -112,3 +112,23 @@ function warnTheSheep(queue) {
     return value =  `Oi! Sheep number ${queue.length - sheep -1}! You are about to be eaten by a wolf!`
   }
 }
+
+
+const flip=(d, a)=>{
+  if(d == 'R') {
+    return a.sort((a1, b1) => a1 - b1)
+  } else {
+    return a.sort((a1, b1) => b1-a1)
+  }
+}
+
+
+function chromosomeCheck(sperm) {
+  console.log(sperm)
+  if(sperm == "XY") {
+    return "Congratulations! You're going to have a son."
+  } else {
+    return "Congratulations! You're going to have a daughter."
+  }
+}
+
