@@ -44,3 +44,11 @@ function binToDec(bin) {
 }
 
 
+function combat(health, damage) {
+  let num =  health - damage
+  if(num < 0) {
+    return 0
+  } else {
+    return num
+  }
+}
