@@ -52,3 +52,9 @@ function combat(health, damage) {
     return num
   }
 }
+
+
+function replaceDots(str) {
+  return str.replace(/\./g, '-');
+}
+
