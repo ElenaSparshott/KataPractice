@@ -58,3 +58,14 @@ function replaceDots(str) {
   return str.replace(/\./g, '-');
 }
 
+
+function dutyFree(normPrice, discount, hol){
+  
+  let percentage = (discount/100)
+  let holidayPrice = normPrice * percentage
+  let bottles = Math.floor(hol/holidayPrice)
+
+  return bottles
+}
+
+
