@@ -16,3 +16,19 @@ function oddCount(n){
 function oddCount(n){
   return Math.floor(n/2)
 }
+
+
+function mergeArrays(arr1, arr2) {
+  let array3 = arr1.concat(arr2);
+  
+  let newArray = array3
+  
+  let sortedArray = newArray.sort(function(a, b){return a - b})
+  
+  let theSet = new Set(sortedArray)
+  
+  let answer = Array.from(theSet)
+  
+  return answer
+
+}
