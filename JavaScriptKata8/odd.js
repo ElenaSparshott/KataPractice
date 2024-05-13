@@ -32,3 +32,10 @@ function mergeArrays(arr1, arr2) {
   return answer
 
 }
+
+
+function toBinary(n){
+  return +n.toString(2);
+}
+
+
