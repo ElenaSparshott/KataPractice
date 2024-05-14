@@ -69,3 +69,25 @@ function dutyFree(normPrice, discount, hol){
 }
 
 
+function replace(s){
+  let a = s.replace(/[aeiou]/gi, "!")
+  return a
+}
+
+
+function hexToDec(hexString){ 
+  let a = parseInt(hexString, 16)
+  return a
+}
+
+
+function main (verb, noun) {
+    return verb + noun
+}
+
+
+function sayHello( name, city, state ) {
+  return `Hello, ${name.join(" ")}! Welcome to ${city}, ${state}!`
+}
+
+
