@@ -91,3 +91,27 @@ function sayHello( name, city, state ) {
 }
 
 
+function formatMoney(amount){
+  let a  = `$${amount.toFixed(2)}`
+  return a
+}
+
+
+function take(arr, n) {
+  return arr.splice(0, n)
+}
+
+
+function correctTail(bod, tail){
+  
+  sub = bod.substr(bod.length-(tail.length))
+  
+  if (sub = tail) {
+    return true
+  }
+  else {
+    return false
+  }
+}
+
+
