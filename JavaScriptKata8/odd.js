@@ -114,4 +114,55 @@ function correctTail(bod, tail){
   }
 }
 
+function correctTail(body, tail){
+  
+  sub = body.substr(body.length-(tail.length))
+  
+  if (sub == tail) {
+    return true
+  }
+  else {
+    return false
+  }
+}
+
+
+function getSize(width, height, depth) {
+  let volume = width*height*depth
+  let area = 2 * (width*height + width*depth + height*depth)
+  return [area, volume]
+}
+
+
+function howManyDalmatians(number) {
+  
+  let dogs = ["Hardly any", "More than a handful!", "Woah that's a lot of dogs!", "101 DALMATIANS!!!"];
+  
+  return number <= 10 ? dogs[0] : number <= 50 ? dogs[1] : number == 101 ?  dogs[3] : dogs[2] 
+}
+
+
+function apple(x){
+  
+  if(x**2 >1000){
+    return "It's hotter than the sun!!"
+  } else{
+    return "Help yourself to a honeycomb Yorkie for the glovebox."
+  }
+}
+
+
+function cubeChecker(volume, side){
+  let sides = Math.cbrt(volume)
+  if(side == 0) {
+    return false
+  } else if(Math.sign(side) == -1) {
+    return false
+  } else if(side == sides){
+    return true
+  } else {
+    return false
+  }
+}
+
 
