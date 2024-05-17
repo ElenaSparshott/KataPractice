@@ -166,3 +166,39 @@ function cubeChecker(volume, side){
 }
 
 
+function cubeChecker(volume, side){
+
+  return Math.sign(side) > 0 && (side**3 == volume)
+    
+}
+
+
+function generateRange(min, max, step){
+    return Array.from(
+    { length: (max - min) / step + 1 },
+    (value, index) => min + index * step
+    );
+}
+
+
+function findAverage(nums) { 
+  let total = 0;
+  for (let n of nums) {
+    total += n; 
+  }
+  return total/nums.length
+}
+
+
+function multiply(number){ 
+    if(Math.sign(number) == -1) {
+      let a = number.toString().length - 1
+      let b = 5**a
+      return b*number
+    } else {
+    let fives = 5**number.toString().length 
+    return fives * number
+  }
+}
+
+
