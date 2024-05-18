@@ -202,3 +202,8 @@ function multiply(number){
 }
 
 
+function combineNames(first, last) {
+  return `${first} ${last}`
+}
+
+
