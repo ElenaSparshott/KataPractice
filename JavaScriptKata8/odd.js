@@ -235,3 +235,27 @@ function answer3(){
   //the answer should be "yes" or "no"
   return "yes";
 }
+
+
+function calculateTip(amount, rating) {
+  
+  switch(rating.toUpperCase()) {
+      case "TERRIBLE":
+        return 0
+      
+      case "POOR":
+        return Math.ceil(amount * 0.05)
+      
+      case "GOOD":
+        return Math.ceil(amount * 0.1)
+      
+      case "GREAT":
+        return Math.ceil(amount * 0.15)
+      
+      case "EXCELLENT":
+        return Math.ceil(amount * 0.2)
+      
+      default:
+        return"Rating not recognised"
+  }
+}
