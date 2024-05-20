@@ -259,3 +259,22 @@ function calculateTip(amount, rating) {
         return"Rating not recognised"
   }
 }
+
+
+function ifChuckSaysSo(){
+  return !true
+}
+
+
+function reverseSlice(str) {
+  let arr = []
+  let reveresedStr = str.split("").reverse().join("");
+  for(let i = 0; i < reveresedStr.length; i++) {
+    let number = reveresedStr.slice(i, reveresedStr.length)
+    arr.push(number)
+  }
+  return arr
+}
+
+
+Object.freeze(MrFreeze)
