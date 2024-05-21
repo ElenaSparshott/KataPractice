@@ -278,3 +278,10 @@ function reverseSlice(str) {
 
 
 Object.freeze(MrFreeze)
+
+
+const isReallyNaN = (val) => {
+  return Number.isNaN(val)  
+};
+
+
