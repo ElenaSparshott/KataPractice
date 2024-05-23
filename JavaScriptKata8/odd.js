@@ -285,3 +285,23 @@ const isReallyNaN = (val) => {
 };
 
 
+function myFirstKata(a, b) {
+  
+  if(typeof(a) == "string") {
+    return false;
+  } else if (typeof(b) == "string") {
+    return false;
+  } else if (a == true)  {
+    return false;
+  } else if (typeof(a) == true || typeof(a) == false) {
+    return false;
+  } else if (typeof(b) == true || typeof(b) == false)  {
+    return false;
+  } else if (Number.isNaN(a)) {
+    return false;
+  } else if (Number.isNaN(b)) {
+    return false;
+  } else {
+    return (a % b) + (b % a);
+  }
+}
