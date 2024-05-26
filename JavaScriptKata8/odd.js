@@ -305,3 +305,8 @@ function myFirstKata(a, b) {
     return (a % b) + (b % a);
   }
 }
+
+
+var templateStrings = function(noun, adjective) {
+  return `${noun} are ${adjective}`
+}
