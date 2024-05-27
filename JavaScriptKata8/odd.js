@@ -310,3 +310,12 @@ function myFirstKata(a, b) {
 var templateStrings = function(noun, adjective) {
   return `${noun} are ${adjective}`
 }
+
+
+function isDigit(s) {
+  if(parseFloat(s) == s) {
+    return true
+  } else {
+    return false
+  }
+}
