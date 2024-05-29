@@ -319,3 +319,12 @@ function isDigit(s) {
     return false
   }
 }
+
+
+function validate(username, password){
+  var database = new Database();
+  if(password.includes("||")) {
+    return "Wrong username or password!"
+  } 
+  return database.login(username, password);
+}
