@@ -328,3 +328,8 @@ function validate(username, password){
   } 
   return database.login(username, password);
 }
+
+
+function sixToast(num) {
+  return Math.abs(num - 6)
+}
