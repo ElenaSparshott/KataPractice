@@ -333,3 +333,9 @@ function validate(username, password){
 function sixToast(num) {
   return Math.abs(num - 6)
 }
+
+
+function getASCII(c){
+  return c.charCodeAt() 
+  
+}
