@@ -336,6 +336,12 @@ function sixToast(num) {
 
 
 function getASCII(c){
-  return c.charCodeAt() 
-  
+  return c.charCodeAt()  
 }
+
+
+const message = exceriseTimeMins < 30 ? "Try harder" : "Well done!"
+console.log(message)
+
+
+
