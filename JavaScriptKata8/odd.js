@@ -345,3 +345,17 @@ console.log(message)
 
 
 
+const newMessage = exceriseTimeMins < 30 ? "Try harder" 
+: exceriseTimeMins < 60 ? "Well done!" 
+: "Excellent"
+console.log(newMessage)
+
+
+const playerGuess = 3
+const correctAnswer = 6
+const message5 = playerGuess === correctAnswer ? "Correct" : "Wrong"
+
+console.log(message5)
+
+
+
