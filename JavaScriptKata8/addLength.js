@@ -40,6 +40,7 @@ console.log(gamer)
 console.log(gamer1)
 
 
+<<<<<<< HEAD
 // Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
 
 // Example
@@ -55,3 +56,24 @@ function createPhoneNumber(n){
   
 }
 
+=======
+function Character(name) {
+   this.name = name,
+   this.collectedItemsArr = [],
+   this.addItem = function(item) {
+      this.collectedItemsArr.push(item)
+      console.log(`merlin now has ${this.collectedItemsArr}`)
+   }
+}
+
+const player1 = new Character("Ellie")
+player1.addItem("wand")
+
+console.log(player1)
+
+
+const player2 = new Character("Dave")
+player2.addItem("orb")
+
+console.log(player2)
+>>>>>>> 177891b (constructor function)
