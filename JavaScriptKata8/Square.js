@@ -73,4 +73,15 @@ function array(string) {
   return answer
 }
 
+// Formatting decimal places #0
+
+function twoDecimalPlaces(n) {
+  return Math.round(n * 100) / 100;
+}
+
+
+const obj = { foo: "bar", baz: 42 };
+console.log(Object.entries(obj));
+console.log(obj.baz)
+
 
