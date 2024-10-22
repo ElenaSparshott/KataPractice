@@ -85,3 +85,28 @@ console.log(Object.entries(obj));
 console.log(obj.baz)
 
 
+// Printing Array elements with Comma delimiters
+function printArray(array){
+  return array.join()
+}
+
+
+// Parse float
+function parseF(s) { 
+  let a = parseInt(s) 
+  console.log(a)
+  if(typeof a === "number") {
+    return a
+  }
+  return null;
+}
+
+
+// Duck Duck Goose
+function duckDuckGoose(players, goose) {
+  let x = (goose - 1) % players.length 
+  let y = players[x]
+  return y.name
+}
+
+
