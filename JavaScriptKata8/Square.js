@@ -110,3 +110,18 @@ function duckDuckGoose(players, goose) {
 }
 
 
+// Heads and Legs
+
+function animals(heads, legs){
+  
+  if(heads < 0 || legs < 0 || legs > heads * 4) {
+    return "No solutions"
+  }
+  let extraLegs = legs - (heads * 2)
+  if(extraLegs %2 != 0 || extraLegs < 0) {
+    return "No solutions"
+  }
+  let cows = extraLegs / 2
+  let chickens = heads - cows
+  return [chickens, cows]
+}
