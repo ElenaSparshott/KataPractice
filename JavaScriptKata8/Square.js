@@ -125,3 +125,5 @@ function animals(heads, legs){
   let chickens = heads - cows
   return [chickens, cows]
 }
+
+
