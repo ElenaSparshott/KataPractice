@@ -1,7 +1,11 @@
 // Reverse words
 
-function reverseWords(str) {
-  let a = str.split(" ").reverse().join(" ");
-  let b = a.split("").reverse().join("");
-  return b
+function reverseWord(s) {
+    return s.split("").reverse().join("")
 }
+
+function reverseWords(str) {
+  return str.split(" ").reverse().map(reverseWord).join(" ");
+}
+
+console.log(reverseWords('The good dog'))
