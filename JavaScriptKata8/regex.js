@@ -17,3 +17,32 @@ function excludingVatPrice(price){
 }
 
 
+// Easy Time Convert
+
+function timeConvert(num) { 
+  if (num <= 0) {
+    return  "00:00"
+  }
+  
+   if(num < 10) {
+    return `00:0${num}`
+    }  
+  
+    if(num < 60) {
+    return `00:${num}`
+    }  
+  
+    if(num > 60) {
+      let a = (num % 60)
+      console.log(a)
+      if(a < 10) {
+        let b = (num - a)
+        let c = b/60
+        return `0${c}:0${a}`
+      } else {
+        let b = (num - a)
+        let c = b/60
+       return `0${c}:${a}`
+      }
+  } 
+}
