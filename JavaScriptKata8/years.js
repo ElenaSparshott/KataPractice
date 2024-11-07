@@ -30,3 +30,13 @@ function describeAge(age) {
 const usdcny = usd =>  `${(usd * 6.75).toFixed(2)} Chinese Yuan`
 
 
+// Is the date today
+
+function isToday(date) {
+  const today = new Date();
+  return date.getDate() == today.getDate() &&
+      date.getMonth() == today.getMonth() &&
+      date.getFullYear() == today.getFullYear()
+}
+
+
