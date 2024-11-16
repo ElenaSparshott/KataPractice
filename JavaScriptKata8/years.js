@@ -52,3 +52,20 @@ function sakuraFall(v) {
 }
 
 
+// How many stairs will Suzuki climb in 20 years?
+
+function stairsIn20(s){
+  
+  let q = s.flat()
+  
+  const initialValue = 0;
+  const a = q.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  initialValue,
+  );
+  
+  console.log(a)
+  return (a * 20)
+}
+
+
